@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carrot Website for Home Shopping">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- CSS & Bootstrap Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <!-- Swiper.js File -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Font Awesome File -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <!-- Main Style File -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Carrot</title>
+  </head>
+  <body>
+    <!-- Start Loading -->
+    <div class="loading position-fixed w-100 h-100 d-flex justify-content-center align-items-center">
+      <svg class="progress-ring wow rotateIn" width="120" height="120">
+        <circle class="progress-ring__circle" stroke="var(--Primary-color)" stroke-width="4" fill="transparent" r="52" cx="60" cy="60"/>
+      </svg>
+    </div>
+    <!-- End Loading -->
+    <div class="overlay"></div>
+    <i class="fa-regular fa-angle-up scrollTop position-fixed d-flex justify-content-center align-items-center"></i>
+    <!-- Start Header -->
+    <header class="header">
+      <div class="container d-flex flex-column justify-content-center gap-4">
+        <div class="header-search d-flex gap-4 flex-column flex-lg-row align-items-center justify-content-between pb-3">
+          <div class="logo mb-md-0">
+            <a class="main-logo" href="#"><img src="images/logo.png" alt="Logo"></a>
+          </div>
+          <form class="search-form d-flex flex-wrap rounded">
+            <input class="p-2" type="text" placeholder="search for items...">
+            <select class="p-2">
+              <option value="All Caregories">All Caregories</option>
+              <option value="Bakery">Bakery</option>
+              <option value="Fruits">Fruits</option>
+              <option value="Vegetables">Vegetables</option>
+              <option value="Snack">Snack</option>
+              <option value="Spice">Spice</option>
+            </select>
+            <i class="fa-solid fa-magnifying-glass p-2 ps-3 pe-3 d-flex justify-content-center align-items-center"></i>
+          </form>
+          <div class="accounts-info d-flex align-items-center gap-4">
+            <div class="accounts-page position-fixed">
+              <div class="main-page position-absolute">
+                <div class="close position-absolute d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <h3 class="text-center position-relative fw-bold pb-3 mb-3">Accounts</h3>
+                <div class="holder d-flex justify-content-center align-items-center">
+                  <ul class="accounts-box rounded p-3">
+                    <li>
+                      <a href="https://www.facebook.com/profile.php?id=100021981931191&mibextid=JRoKGi" class="d-flex mb-3 rounded">
+                        <i class="fa-brands fa-facebook-f d-flex justify-content-center align-items-center" style="background-color: #1877f2;"></i>
+                        <span class="d-flex justify-content-center align-items-center">FaceBook</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://x.com/AbdoMoh72549717?t=Ty0B7rDMgI8YRuW0j0hBtQ&s=09" class="d-flex mb-3 rounded">
+                        <i class="fa-brands fa-twitter d-flex justify-content-center align-items-center" style="background-color: #1da1f2;"></i>
+                        <span class="d-flex justify-content-center align-items-center">Twitter</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/abdelrahman_mohamed311?igsh=YTQ2ZXVtZGVpbzZm" class="d-flex mb-3 rounded">
+                        <i class="fa-brands fa-instagram d-flex justify-content-center align-items-center" style="background-color: #e1306c;"></i>
+                        <span class="d-flex justify-content-center align-items-center">Instagram</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/abdelrahman-mohamed-79baa51b6/" class="d-flex mb-3 rounded">
+                        <i class="fa-brands fa-linkedin d-flex justify-content-center align-items-center" style="background-color: #0a66c2;"></i>
+                        <span class="d-flex justify-content-center align-items-center">LinkedIn</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/Abdelrahmanmohamed78" class="d-flex rounded">
+                        <i class="fa-brands fa-github d-flex justify-content-center align-items-center" style="background-color: #333;"></i>
+                        <span class="d-flex justify-content-center align-items-center">GitHub</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="wishlist-page position-fixed">
+              <div class="main-page position-absolute">
+                <div class="close position-absolute d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <h3 class="text-center position-relative fw-bold pb-3 mb-3">Wishlist Products</h3>
+                <div class="all-products">
+                </div>
+              </div>
+            </div>
+            <div class="cart-page position-fixed">
+              <div class="main-page position-absolute">
+                <div class="close position-absolute d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <h3 class="text-center position-relative fw-bold pb-3 mb-3">Cart Products</h3>
+                <div class="all-products"></div>
+              </div>
+            </div>
+            <a class="d-flex align-items-center" href="#">
+              <i class="fa-light fa-user me-2 lead"></i>
+              <span>Accounts</span>
+            </a>
+            <a class="d-flex align-items-center" href="#">
+              <i class="fa-light fa-heart me-2 lead"></i>
+              <span>WhishList</span>
+            </a>
+            <a class="d-flex align-items-center" href="#">
+              <i class="fa-light fa-cart-shopping me-2 lead"></i>
+              <span>Cart</span>
+            </a>
+          </div>
+        </div>
+        <div class="main-header d-flex align-items-center justify-content-between">
+          <i class="bars fa-light fa-bars lead d-block d-lg-none p-2 border rounded"></i>
+          <nav class="nav d-none d-lg-block">
+            <ul class="d-flex gap-5">
+              <li class="position-relative"><a class="position-relative d-block" href="#">Home</a></li>
+              <li class="position-relative"><a class="position-relative d-block" href="#">About Us</a></li>
+              <li class="expanded position-relative">
+                <a class="position-relative d-block" href="#">Category</a>
+                <ul class="position-absolute">
+                  <li><a class="d-block" href="#popular-product">Bakery</a></li>
+                  <li><a class="d-block" href="#popular-product">Fruits</a></li>
+                  <li><a class="d-block" href="#popular-product">Vegetable</a></li>
+                  <li><a class="d-block" href="#popular-product">Snack</a></li>
+                  <li><a class="d-block" href="#popular-product">Spice</a></li>
+                </ul>
+              </li>
+              <li class="expanded position-relative">
+                <a class="position-relative d-block" href="#">Products</a>
+                <ul class="position-absolute">
+                  <li><a class="d-block" href="#popular-product">Bakery</a></li>
+                  <li><a class="d-block" href="#popular-product">Fruits</a></li>
+                  <li><a class="d-block" href="#popular-product">Vegetable</a></li>
+                </ul>
+              </li>
+              <li class="expanded position-relative">
+                <a class="position-relative d-block" href="#">Pages</a>
+                <ul class="position-absolute">
+                  <li><a class="d-block" href="Error 404.html">Anime</a></li>
+                  <li><a class="d-block" href="Error 404.html">Manga</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <a href="https://wa.me/+201001520321" class="phone" target="_blank">
+            <i class="fa-thin fa-phone me-2"></i>
+            <span>+2 1001 520 321</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Aside -->
+    <aside class="aside position-fixed p-4">
+      <div class="aside-header d-flex align-items-center justify-content-between pt-3 pb-3 mb-3">
+        <h4 class="mb-0">My Menu</h4>
+        <i class="fa fa-xmark lead p-color"></i>
+      </div>
+      <ul class="links">
+        <li><a class="pt-2 pb-2 d-block" href="#">Home</a></li>
+        <li><a class="pt-2 pb-2 d-block" href="#">About</a></li>
+        <li>
+          <a class="pt-2 pb-2 d-flex align-items-center justify-content-between" href="#">
+            Category
+            <span class="fs-4 p-color">+</span>
+          </a>
+          <div class="holder">
+            <ul class="overflow-hidden">
+              <li><a class="d-block pt-2 pb-2 p-color fs-13" href="#">Bakery</a></li>
+              <li><a class="d-block pt-2 pb-2 p-color fs-13" href="#">Fruits</a></li>
+              <li><a class="d-block pt-2 pb-2 p-color fs-13" href="#">Vegetable</a></li>
+              <li><a class="d-block pt-2 pb-2 p-color fs-13" href="#">Snack</a></li>
+              <li><a class="d-block pt-2 pb-2 p-color fs-13" href="#">Spice</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a class="pt-2 pb-2 d-flex align-items-center justify-content-between" href="#">
+            Products
+            <span class="fs-4 p-color">+</span>
+          </a>
+          <div class="holder">
+            <ul class="overflow-hidden">
+              <li><a class="d-block pt-2 pb-2 p-color fs-13" href="#">Bakery</a></li>
+              <li><a class="d-block pt-2 pb-2 p-color fs-13" href="#">Fruits</a></li>
+              <li><a class="d-block pt-2 pb-2 p-color fs-13" href="#">Vegetable</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a class="pt-2 pb-2 d-flex align-items-center justify-content-between" href="#">
+            Pages
+            <span class="fs-4 p-color">+</span>
+          </a>
+          <div class="holder">
+            <ul class="overflow-hidden">
+              <li><a class="d-block pt-2 pb-2 p-color fs-13" href="#">Anime</a></li>
+              <li><a class="d-block pt-2 pb-2 p-color fs-13" href="#">Manga</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Aside -->
+    <i class="setting-gear fa-thin fa-gear position-fixed d-flex justify-content-center align-items-center rounded-2"></i>
+    <!-- Start Setting Tools Box -->
+    <div class="settings position-fixed ">
+      <div class="settings-header d-flex align-items-center justify-content-between p-3 mb-3">
+        <h4 class="mb-0 fs-5">Tools</h4>
+        <i class="fa fa-xmark lead c-gray fw-light"></i>
+      </div>
+      <div class="settings-color p-4">
+        <h4 class="fs-6 mb-3">Select Color</h4>
+        <ul class="d-flex flex-wrap justify-content-center justify-content-sm-start gap-2">
+          <li class="rounded selected" data-main="#64b496"></li>
+          <li class="rounded" data-main="#f5885f"></li>
+          <li class="rounded" data-main="#ae8d62"></li>
+          <li class="rounded" data-main="#3f51b5"></li>
+          <li class="rounded" data-main="#f44336"></li>
+          <li class="rounded" data-main="#e91e4c"></li>
+          <li class="rounded" data-main="#607d8b"></li>
+          <li class="rounded" data-main="#5392d2"></li>
+          <li class="rounded" data-main="#03492f"></li>
+          <li class="rounded" data-main="#9655ca"></li>
+        </ul>
+      </div>
+      <div class="settings-theme p-4">
+        <h4 class="fs-6">Select Theme</h4>
+        <ul class="d-flex align-items-center justify-content-center flex-wrap gap-2">
+          <li class="rounded dark" data-color="#000" data-text = "#fff" data-menu="#1f1c28" data-border="#27213b" data-graycolor="#aaa"></li>
+          <li class="rounded light selected" data-color="#fff" data-text = "#000" data-menu="#f7f7f8" data-border="#e9e9e9" data-graycolor="#777"></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Setting Tools Box -->
+    <!-- Start Landing Carousel Styles -->
+    <section class="landing">
+      <div class="container-fluid w-100 h-100">
+        <div class="swiper w-100 h-100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="box w-100 h-100 d-flex align-items-center rounded-4 position-relative overflow-hidden" style="background-image: url('./images/banner-2.jpg');">
+                <img class="position-absolute" src="images/2.png" alt="2">
+                <img class="position-absolute" src="images/3.png" alt="3">
+                <img class="position-absolute" src="images/4.png" alt="4">
+                <img class="position-absolute" src="images/5.png" alt="5">
+                <div class="info ms-auto me-auto ms-md-0 me-md-0 text-center text-md-start">
+                  <h4 class="fs-5"><span>100%</span> Organic fruits</h4>
+                  <h2 class="lh-base">Explore frech & juicy fruits</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button class="main-btn">Shop now</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box w-100 h-100 d-flex align-items-center rounded-4 position-relative overflow-hidden" style="background-image: url('./images/banner.jpg');">
+                <img class="position-absolute" src="images/2.png" alt="2">
+                <img class="position-absolute" src="images/3.png" alt="3">
+                <img class="position-absolute" src="images/4.png" alt="4">
+                <img class="position-absolute" src="images/5.png" alt="5">
+                <div class="info ms-auto me-auto ms-md-0 me-md-0 text-center text-md-start">
+                  <h4 class="fs-5"><span>100%</span> Organic fruits</h4>
+                  <h2 class="lh-base">The best way to stuff your wallt</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button class="main-btn">Shop now</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box w-100 h-100 d-flex align-items-center rounded-4 position-relative overflow-hidden" style="background-image: url('./images/bg-deal.jpg');">
+                <img class="position-absolute" src="images/2.png" alt="2">
+                <img class="position-absolute" src="images/3.png" alt="3">
+                <img class="position-absolute" src="images/4.png" alt="4">
+                <img class="position-absolute" src="images/5.png" alt="5">
+                <div class="info ms-auto me-auto ms-md-0 me-md-0 text-center text-md-start">
+                  <h4 class="fs-5"><span>100%</span> Organic fruits</h4>
+                  <h2 class="lh-base">Explore frech & Green Burger</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button class="main-btn">Shop now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Landing Carousel Styles -->
+    <!-- Start items Sec -->
+    <section class="items">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center">
+            <div class="box rounded-4 position-relative">
+              <i class="fa-thin fa-peach d-flex justify-content-center align-items-center ms-auto me-auto rounded-circle mb-2" style="background-color: #ecf0ff;"></i>
+              <p class="mb-1">Fruits</p>
+              <span class="p-color fs-13">(32 items)</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center">
+            <div class="box rounded-4 position-relative">
+              <i class="fa-thin fa-leafy-green d-flex justify-content-center align-items-center ms-auto me-auto rounded-circle mb-2" style="background-color: #f9f9d9;"></i>
+              <p class="mb-1">Bakry</p>
+              <span class="p-color fs-13">(50 items)</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center">
+            <div class="box rounded-4 position-relative">
+              <i class="fa-thin fa-cookie-bite d-flex justify-content-center align-items-center ms-auto me-auto rounded-circle mb-2" style="background-color: #fde1f5;"></i>
+              <p class="mb-1">Dairy</p>
+              <span class="p-color fs-13">(46 items)</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center">
+            <div class="box rounded-4 position-relative">
+              <i class="fa-thin fa-wine-glass-empty d-flex justify-content-center align-items-center ms-auto me-auto rounded-circle mb-2" style="background-color: #ffeae9;"></i>
+              <p class="mb-1">Juices</p>
+              <span class="p-color fs-13">(20 items)</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center">
+            <div class="box rounded-4 position-relative">
+              <i class="fa-thin fa-salad d-flex justify-content-center align-items-center ms-auto me-auto rounded-circle mb-2" style="background-color: #e2fde2;"></i>
+              <p class="mb-1">Vegetables</p>
+              <span class="p-color fs-13">(80 items)</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center">
+            <div class="box rounded-4 position-relative">
+              <i class="fa-thin fa-burger-lettuce d-flex justify-content-center align-items-center ms-auto me-auto rounded-circle mb-2" style="background-color: #fff6ec;"></i>
+              <p class="mb-1">Snacks</p>
+              <span class="p-color fs-13">(230 items)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End items Sec -->
+    <!-- Start Popular Products Sec -->
+    <section class="popular-product main-product-boxes position-relative" id="popular-product">
+      <div class="alert position-fixed"></div>
+      <img class="side-logo position-absolute" src="images/shape-1.png" alt="shape-1">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Popular Prodcuts</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore lacus vel facilisis.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-3 mb-4 mb-lg mb-4-0">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-12 mb-3 mb-sm-0 mb-lg-3">
+                <ul class="filter">
+                  <li class="d-flex justify-content-between align-items-center all active" data-filter="all">
+                    <span>All</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center snack" data-filter="snack">
+                    <span>Snack</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center vegetables" data-filter="vegetables">
+                    <span>Vegetables</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center fruits" data-filter="fruits">
+                    <span>Fruits</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center bakery" data-filter="bakery">
+                    <span>Bakery</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-12">
+                <div class="box h-100">
+                  <h3>
+                    Juicy
+                    <br>
+                    <span>FRUITS</span>
+                  </h3>
+                  <p>100% Natural</p>
+                  <button class="main-btn">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-9">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 product-filter all vegetables">
+                <div class="card main-card overflow-hidden rounded p-2">
+                  <div class="image position-relative">
+                    <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    <img class="w-100 h-100 rounded" src="images/product-1.jpg" alt="product-1">
+                    <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                  </div>
+                  <div class="info fs-13 text-center">
+                    <p class="mb-1 p-color">Vegetables</p>
+                    <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                      <ul class="d-flex align-items-center">
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                      </ul>
+                      <span class="p-color">(4.5)</span>
+                    </div>
+                    <a class="description d-block mb-2">
+                      Fresh organic villa farm lomon 500gm pack
+                    </a>
+                    <p class="price mb-0 d-flex justify-content-center align-items-center">
+                      <span class="fw-bold fs-6 me-2">$120.25</span>
+                      <del>$160.99</del>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 product-filter all snack">
+                <div class="card main-card overflow-hidden rounded p-2">
+                  <div class="image position-relative">
+                    <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    <img class="w-100 h-100 rounded" src="images/product-9.jpg" alt="product-9">
+                    <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                  </div>
+                  <div class="info fs-13 text-center">
+                    <p class="mb-1 p-color">Snake</p>
+                    <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                      <ul class="d-flex align-items-center">
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                      </ul>
+                      <span class="p-color">(5.0)</span>
+                    </div>
+                    <a class="description d-block mb-2">
+                      Best snakes with hazel nut pack 200gm
+                    </a>
+                    <p class="price mb-0 d-flex justify-content-center align-items-center">
+                      <span class="fw-bold fs-6 me-2">$180.25</span>
+                      <del>$190.99</del>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 product-filter all fruits">
+                <div class="card main-card overflow-hidden rounded p-2">
+                  <div class="image position-relative">
+                    <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    <img class="w-100 h-100 rounded" src="images/product-2.jpg" alt="product-2">
+                    <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                  </div>
+                  <div class="info fs-13 text-center">
+                    <p class="mb-1 p-color">Fruits</p>
+                    <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                      <ul class="d-flex align-items-center">
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                      </ul>
+                      <span class="p-color">(4.5)</span>
+                    </div>
+                    <a class="description d-block mb-2">
+                      Fresh organic apple 1kg simla marming
+                    </a>
+                    <p class="price mb-0 d-flex justify-content-center align-items-center">
+                      <span class="fw-bold fs-6 me-2">$120.25</span>
+                      <del>$160.99</del>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 product-filter all bakery">
+                <div class="card main-card overflow-hidden rounded p-2">
+                  <div class="image position-relative">
+                    <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    <img class="w-100 h-100 rounded" src="images/product-17.jpg" alt="product-17">
+                    <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                  </div>
+                  <div class="info fs-13 text-center">
+                    <p class="mb-1 p-color">Bakery</p>
+                    <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                      <ul class="d-flex align-items-center">
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                      </ul>
+                      <span class="p-color">(5.0)</span>
+                    </div>
+                    <a class="description d-block mb-2">
+                      Delicious white baked fresh bread and toast
+                    </a>
+                    <p class="price mb-0 d-flex justify-content-center align-items-center">
+                      <span class="fw-bold fs-6 me-2">$180.25</span>
+                      <del>$190.99</del>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 product-filter all snack">
+                <div class="card main-card overflow-hidden rounded p-2">
+                  <div class="image position-relative">
+                    <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    <img class="w-100 h-100 rounded" src="images/product-11.jpg" alt="product-11">
+                    <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                  </div>
+                  <div class="info fs-13 text-center">
+                    <p class="mb-1 p-color">Snack</p>
+                    <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                      <ul class="d-flex align-items-center">
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                      </ul>
+                      <span class="p-color">(5.0)</span>
+                    </div>
+                    <a class="description d-block mb-2">
+                      Sweet crunchy nut mix 250gm pack
+                    </a>
+                    <p class="price mb-0 d-flex justify-content-center align-items-center">
+                      <span class="fw-bold fs-6 me-2">$180.25</span>
+                      <del>$190.99</del>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 product-filter all fruits">
+                <div class="card main-card overflow-hidden rounded p-2">
+                  <div class="image position-relative">
+                    <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    <img class="w-100 h-100 rounded" src="images/product-3.jpg" alt="product-3">
+                    <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                  </div>
+                  <div class="info fs-13 text-center">
+                    <p class="mb-1 p-color">Fruits</p>
+                    <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                      <ul class="d-flex align-items-center">
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                      </ul>
+                      <span class="p-color">(3.2)</span>
+                    </div>
+                    <a class="description d-block mb-2">
+                      Organic fresh venila farm watermelon 5kg
+                    </a>
+                    <p class="price mb-0 d-flex justify-content-center align-items-center">
+                      <span class="fw-bold fs-6 me-2">$120.25</span>
+                      <del>$160.99</del>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 product-filter all snack">
+                <div class="card main-card overflow-hidden rounded p-2">
+                  <div class="image position-relative">
+                    <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    <img class="w-100 h-100 rounded" src="images/product-10.jpg" alt="product-10">
+                    <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                  </div>
+                  <div class="info fs-13 text-center">
+                    <p class="mb-1 p-color">Snack</p>
+                    <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                      <ul class="d-flex align-items-center">
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                      </ul>
+                      <span class="p-color">(5.0)</span>
+                    </div>
+                    <a class="description d-block mb-2">
+                      Sweet crunchy nut mix 250gm pack
+                    </a>
+                    <p class="price mb-0 d-flex justify-content-center align-items-center">
+                      <span class="fw-bold fs-6 me-2">$180.25</span>
+                      <del>$190.99</del>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 product-filter all fruits">
+                <div class="card main-card overflow-hidden rounded p-2">
+                  <div class="image position-relative">
+                    <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    <img class="w-100 h-100 rounded" src="images/product-4.jpg" alt="product-4">
+                    <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                  </div>
+                  <div class="info fs-13 text-center">
+                    <p class="mb-1 p-color">Fruits</p>
+                    <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                      <ul class="d-flex align-items-center">
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                      </ul>
+                      <span class="p-color">(3.2)</span>
+                    </div>
+                    <a href="#" class="description d-block mb-2">
+                      Organic fresh venila farm watermelon 5kg
+                    </a>
+                    <p class="price mb-0 d-flex justify-content-center align-items-center">
+                      <span class="fw-bold fs-6 me-2">$120.25</span>
+                      <del>$160.99</del>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 product-filter all snack">
+                <div class="card main-card overflow-hidden rounded p-2">
+                  <div class="image position-relative">
+                    <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    <img class="w-100 h-100 rounded" src="images/product-11.jpg" alt="product-11">
+                    <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                  </div>
+                  <div class="info fs-13 text-center">
+                    <p class="mb-1 p-color">Snack</p>
+                    <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                      <ul class="d-flex align-items-center">
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                      </ul>
+                      <span class="p-color">(5.0)</span>
+                    </div>
+                    <a class="description d-block mb-2">
+                      Sweet crunchy nut mix 250gm pack
+                    </a>
+                    <p class="price mb-0 d-flex justify-content-center align-items-center">
+                      <span class="fw-bold fs-6 me-2">$180.25</span>
+                      <del>$190.99</del>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 product-filter all fruits">
+                <div class="card main-card overflow-hidden rounded p-2">
+                  <div class="image position-relative">
+                    <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    <img class="w-100 h-100 rounded" src="images/product-3.jpg" alt="product-3">
+                    <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                  </div>
+                  <div class="info fs-13 text-center">
+                    <p class="mb-1 p-color">Fruits</p>
+                    <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                      <ul class="d-flex align-items-center">
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                        <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                      </ul>
+                      <span class="p-color">(3.2)</span>
+                    </div>
+                    <a class="description d-block mb-2">
+                      Organic fresh venila farm watermelon 5kg
+                    </a>
+                    <p class="price mb-0 d-flex justify-content-center align-items-center">
+                      <span class="fw-bold fs-6 me-2">$120.25</span>
+                      <del>$160.99</del>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Popular Products Sec -->
+    <!-- Start Fresh Sec -->
+    <section class="fresh position-relative">
+      <img class="position-absolute" src="images/10.png" alt="10">
+      <img class="position-absolute" src="images/8.png" alt="8">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="box rounded" style="background-image: url(./images/data-1.jpg);">
+              <h4 class="fs-5">
+                Healthy
+                <br>
+                Bakery Products
+              </h4>
+              <p class="d-flex align-items-center gap-2"><span>30%</span>off on first order</p>
+              <button class="main-btn">Shop Now</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="box rounded" style="background-image: url(./images/data-2.jpg);">
+              <h4 class="fs-5">
+                Fresh
+                <br>
+                Snacks & Sweets
+              </h4>
+              <p class="d-flex align-items-center gap-2"><span>35%</span>off on first order</p>
+              <button class="main-btn">Shop Now</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="box rounded" style="background-image: url(./images/data-3.jpg);">
+              <h4 class="fs-5">
+                Fresh & healthy
+                <br>
+                Organic Fruits
+              </h4>
+              <p class="d-flex align-items-center gap-2"><span>20%</span>off on first order</p>
+              <button class="main-btn">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Fresh Sec -->
+    <!-- Start Features -->
+    <section class="features position-relative">
+      <img class="position-absolute" src="images/7.png" alt="7">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="box rounded text-center">
+              <i class="fa-thin fa-inbox mb-3"></i>
+              <h5 class="mb-1">Product Packing</h5>
+              <p class="fs-13 p-color">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="box rounded text-center">
+              <i class="fa-thin fa-headphones mb-3"></i>
+              <h5 class="mb-1">24X7 Support</h5>
+              <p class="fs-13 p-color">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="box rounded text-center">
+              <i class="fa-thin fa-truck mb-3"></i>
+              <h5 class="mb-1">Deliver In 5 Days</h5>
+              <p class="fs-13 p-color">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="box rounded text-center">
+              <i class="fa-thin fa-dollar mb-3"></i>
+              <h5 class="mb-1">Payment Secure</h5>
+              <p class="fs-13 p-color">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Features -->
+    <!-- Start Event Time Sec -->
+    <section class="event-time">
+      <div class="container d-flex align-items-center justify-content-center justify-content-lg-start">
+        <div class="box">
+          <p class="discount d-flex align-items-center gap-2">
+            <span>35%</span>
+            OFF
+          </p>
+          <h4>Great deal on organic food.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do maecenas accumsan lacus vel facilisis.</p>
+          <p class="time d-flex justify-content-center gap-3 align-items-center">
+            <span class="days-time d-flex flex-column text-center">
+              <span class="days"></span>
+              <span>Days</span>
+            </span>
+            <i class="fa-solid fa-colon"></i>
+            <span class="hours-time d-flex flex-column text-center">
+              <span class="hours"></span>
+              <span>Hrs</span>
+            </span>
+            <i class="fa-solid fa-colon"></i>
+            <span class="minutes-time d-flex flex-column text-center">
+              <span class="minutes"></span>
+              <span>Min</span>
+            </span>
+            <i class="fa-solid fa-colon"></i>
+            <span class="seconds-time d-flex flex-column text-center">
+              <span class="seconds"></span>
+              <span>Sec</span>
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Event Time Sec -->
+    <!-- Start Review Sec -->
+    <section class="review main-product-boxes position-relative">
+      <img class="position-absolute" src="images/9.png" alt="9">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7 mb-4 mb-lg-0 overflow-hidden">
+            <div class="swiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card main-card overflow-hidden rounded p-2">
+                    <div class="image position-relative">
+                      <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                      <img class="w-100 h-100 rounded" src="images/product-1.jpg" alt="product-1">
+                      <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    </div>
+                    <div class="info fs-13 text-center">
+                      <p class="mb-1 p-color">Vegetables</p>
+                      <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                        <ul class="d-flex align-items-center">
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                        </ul>
+                        <span class="p-color">(4.5)</span>
+                      </div>
+                      <a class="description d-block mb-2">
+                        Fresh organic villa farm lomon 500gm pack
+                      </a>
+                      <p class="price mb-0 d-flex justify-content-center align-items-center">
+                        <span class="fw-bold fs-6 me-2">$120.25</span>
+                        <del>$160.99</del>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card main-card overflow-hidden rounded p-2">
+                    <div class="image position-relative">
+                      <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                      <img class="w-100 h-100 rounded" src="images/product-9.jpg" alt="product-9">
+                      <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    </div>
+                    <div class="info fs-13 text-center">
+                      <p class="mb-1 p-color">Snake</p>
+                      <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                        <ul class="d-flex align-items-center">
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        </ul>
+                        <span class="p-color">(5.0)</span>
+                      </div>
+                      <a class="description d-block mb-2">
+                        Best snakes with hazel nut pack 200gm
+                      </a>
+                      <p class="price mb-0 d-flex justify-content-center align-items-center">
+                        <span class="fw-bold fs-6 me-2">$180.25</span>
+                        <del>$190.99</del>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card main-card overflow-hidden rounded p-2">
+                    <div class="image position-relative">
+                      <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                      <img class="w-100 h-100 rounded" src="images/product-2.jpg" alt="product-2">
+                      <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    </div>
+                    <div class="info fs-13 text-center">
+                      <p class="mb-1 p-color">Fruits</p>
+                      <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                        <ul class="d-flex align-items-center">
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                        </ul>
+                        <span class="p-color">(4.5)</span>
+                      </div>
+                      <a class="description d-block mb-2">
+                        Fresh organic apple 1kg simla marming
+                      </a>
+                      <p class="price mb-0 d-flex justify-content-center align-items-center">
+                        <span class="fw-bold fs-6 me-2">$120.25</span>
+                        <del>$160.99</del>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card main-card overflow-hidden rounded p-2">
+                    <div class="image position-relative">
+                      <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                      <img class="w-100 h-100 rounded" src="images/product-17.jpg" alt="product-17">
+                      <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    </div>
+                    <div class="info fs-13 text-center">
+                      <p class="mb-1 p-color">Bakery</p>
+                      <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                        <ul class="d-flex align-items-center">
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        </ul>
+                        <span class="p-color">(5.0)</span>
+                      </div>
+                      <a class="description d-block mb-2">
+                        Delicious white baked fresh bread and toast
+                      </a>
+                      <p class="price mb-0 d-flex justify-content-center align-items-center">
+                        <span class="fw-bold fs-6 me-2">$180.25</span>
+                        <del>$190.99</del>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card main-card overflow-hidden rounded p-2">
+                    <div class="image position-relative">
+                      <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                      <img class="w-100 h-100 rounded" src="images/product-11.jpg" alt="product-11">
+                      <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    </div>
+                    <div class="info fs-13 text-center">
+                      <p class="mb-1 p-color">Snack</p>
+                      <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                        <ul class="d-flex align-items-center">
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        </ul>
+                        <span class="p-color">(5.0)</span>
+                      </div>
+                      <a class="description d-block mb-2">
+                        Sweet crunchy nut mix 250gm pack
+                      </a>
+                      <p class="price mb-0 d-flex justify-content-center align-items-center">
+                        <span class="fw-bold fs-6 me-2">$180.25</span>
+                        <del>$190.99</del>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card main-card overflow-hidden rounded p-2">
+                    <div class="image position-relative">
+                      <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                      <img class="w-100 h-100 rounded" src="images/product-3.jpg" alt="product-3">
+                      <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    </div>
+                    <div class="info fs-13 text-center">
+                      <p class="mb-1 p-color">Fruits</p>
+                      <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                        <ul class="d-flex align-items-center">
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                        </ul>
+                        <span class="p-color">(3.2)</span>
+                      </div>
+                      <a class="description d-block mb-2">
+                        Organic fresh venila farm watermelon 5kg
+                      </a>
+                      <p class="price mb-0 d-flex justify-content-center align-items-center">
+                        <span class="fw-bold fs-6 me-2">$120.25</span>
+                        <del>$160.99</del>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card main-card overflow-hidden rounded p-2">
+                    <div class="image position-relative">
+                      <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                      <img class="w-100 h-100 rounded" src="images/product-10.jpg" alt="product-10">
+                      <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    </div>
+                    <div class="info fs-13 text-center">
+                      <p class="mb-1 p-color">Snack</p>
+                      <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                        <ul class="d-flex align-items-center">
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        </ul>
+                        <span class="p-color">(5.0)</span>
+                      </div>
+                      <a class="description d-block mb-2">
+                        Sweet crunchy nut mix 250gm pack
+                      </a>
+                      <p class="price mb-0 d-flex justify-content-center align-items-center">
+                        <span class="fw-bold fs-6 me-2">$180.25</span>
+                        <del>$190.99</del>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card main-card overflow-hidden rounded p-2">
+                    <div class="image position-relative">
+                      <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                      <img class="w-100 h-100 rounded" src="images/product-4.jpg" alt="product-4">
+                      <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    </div>
+                    <div class="info fs-13 text-center">
+                      <p class="mb-1 p-color">Fruits</p>
+                      <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                        <ul class="d-flex align-items-center">
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                        </ul>
+                        <span class="p-color">(3.2)</span>
+                      </div>
+                      <a href="#" class="description d-block mb-2">
+                        Organic fresh venila farm watermelon 5kg
+                      </a>
+                      <p class="price mb-0 d-flex justify-content-center align-items-center">
+                        <span class="fw-bold fs-6 me-2">$120.25</span>
+                        <del>$160.99</del>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card main-card overflow-hidden rounded p-2">
+                    <div class="image position-relative">
+                      <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                      <img class="w-100 h-100 rounded" src="images/product-11.jpg" alt="product-11">
+                      <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    </div>
+                    <div class="info fs-13 text-center">
+                      <p class="mb-1 p-color">Snack</p>
+                      <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                        <ul class="d-flex align-items-center">
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                        </ul>
+                        <span class="p-color">(5.0)</span>
+                      </div>
+                      <a class="description d-block mb-2">
+                        Sweet crunchy nut mix 250gm pack
+                      </a>
+                      <p class="price mb-0 d-flex justify-content-center align-items-center">
+                        <span class="fw-bold fs-6 me-2">$180.25</span>
+                        <del>$190.99</del>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card main-card overflow-hidden rounded p-2">
+                    <div class="image position-relative">
+                      <i class="fa-thin fa-heart position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                      <img class="w-100 h-100 rounded" src="images/product-3.jpg" alt="product-3">
+                      <i class="fa-thin fa-lock position-absolute d-flex justify-content-center align-items-center rounded-circle"></i>
+                    </div>
+                    <div class="info fs-13 text-center">
+                      <p class="mb-1 p-color">Fruits</p>
+                      <div class="rate d-flex justify-content-center align-items-center gap-1 mb-2">
+                        <ul class="d-flex align-items-center">
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-solid fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                          <li class="me-1"><i class="fa-thin fa-star star"></i></li>
+                        </ul>
+                        <span class="p-color">(3.2)</span>
+                      </div>
+                      <a class="description d-block mb-2">
+                        Organic fresh venila farm watermelon 5kg
+                      </a>
+                      <p class="price mb-0 d-flex justify-content-center align-items-center">
+                        <span class="fw-bold fs-6 me-2">$120.25</span>
+                        <del>$160.99</del>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+            <div class="box h-100 d-flex align-items-center">
+              <div class="holder">
+                <h4 class="fw-bolder">
+                  Organic & Healthy
+                  <br>
+                  Vegetables
+                </h4>
+                <p><span>25%</span> OFF</p>
+                <button class="main-btn">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Review Sec -->
+    <!-- Start Words Sec -->
+    <section class="words position-relative">
+      <img class="position-absolute" src="images/11.png" alt="11">
+      <div class="container overflow-hidden">
+        <div class="main-heading">
+          <h2>Great Words From People</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore lacus vel facilisis.
+          </p>
+        </div>
+        <div class="swiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="box text-center rounded">
+                <div class="image rounded-circle overflow-hidden ms-auto me-auto">
+                  <img class="w-100 h-100" src="images/greate-1.jpg" alt="greate-1">
+                </div>
+                <span class="p-color fs-13">Front End Dev</span>
+                <h3 class="fw-bold fs-5">Abdelrahman</h3>
+                <q class="d-block mb-2 p-color fs-13">eiusmpsu dolor sit amet, conse cte tur ng elit, sed do eiusmod tem lacus velfacilisis.</q>
+                <div class="rate d-flex justify-content-center align-items-center gap-1">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box text-center rounded">
+                <div class="image rounded-circle overflow-hidden ms-auto me-auto">
+                  <img class="w-100 h-100" src="images/greate-2.png" alt="greate-2">
+                </div>
+                <span class="p-color fs-13">Back End Dev</span>
+                <h3 class="fw-bold fs-5">Mohamed</h3>
+                <q class="d-block mb-2 p-color fs-13">eiusmpsu dolor sit amet, conse cte tur ng elit, sed do eiusmod tem lacus velfacilisis.</q>
+                <div class="rate d-flex justify-content-center align-items-center gap-1">
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box text-center rounded">
+                <div class="image rounded-circle overflow-hidden ms-auto me-auto">
+                  <img class="w-100 h-100" src="images/greate-3.png" alt="greate-3">
+                </div>
+                <span class="p-color fs-13">Full Stack Dev</span>
+                <h3 class="fw-bold fs-5">Salma</h3>
+                <q class="d-block mb-2 p-color fs-13">eiusmpsu dolor sit amet, conse cte tur ng elit, sed do eiusmod tem lacus velfacilisis.</q>
+                <div class="rate d-flex justify-content-center align-items-center gap-1">
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box text-center rounded">
+                <div class="image rounded-circle overflow-hidden ms-auto me-auto">
+                  <img class="w-100 h-100" src="images/greate-1.jpg" alt="greate-1">
+                </div>
+                <span class="p-color fs-13">UI & UX Dev</span>
+                <h3 class="fw-bold fs-5">John</h3>
+                <q class="d-block mb-2 p-color fs-13">eiusmpsu dolor sit amet, conse cte tur ng elit, sed do eiusmod tem lacus velfacilisis.</q>
+                <div class="rate d-flex justify-content-center align-items-center gap-1">
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box text-center rounded">
+                <div class="image rounded-circle overflow-hidden ms-auto me-auto">
+                  <img class="w-100 h-100" src="images/greate-2.png" alt="greate-2">
+                </div>
+                <span class="p-color fs-13">Front End Dev</span>
+                <h3 class="fw-bold fs-5">Osama</h3>
+                <q class="d-block mb-2 p-color fs-13">eiusmpsu dolor sit amet, conse cte tur ng elit, sed do eiusmod tem lacus velfacilisis.</q>
+                <div class="rate d-flex justify-content-center align-items-center gap-1">
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box text-center rounded">
+                <div class="image rounded-circle overflow-hidden ms-auto me-auto">
+                  <img class="w-100 h-100" src="images/greate-3.png" alt="greate-3">
+                </div>
+                <span class="p-color fs-13">Back End Dev</span>
+                <h3 class="fw-bold fs-5">Aisha</h3>
+                <q class="d-block mb-2 p-color fs-13">eiusmpsu dolor sit amet, conse cte tur ng elit, sed do eiusmod tem lacus velfacilisis.</q>
+                <div class="rate d-flex justify-content-center align-items-center gap-1">
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                  <i class="fa-solid fa-star star fs-13"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Words Sec -->
+    <!-- Start News Sec -->
+    <section class="news position-relative">
+      <img class="position-absolute" src="images/shape-2.png" alt="shape-2">
+      <div class="container overflow-hidden">
+        <div class="swiper4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="holder">
+                <div class="box rounded-top">
+                  <div class="info p-4">
+                    <p class="p-color">By Admin | Vegetables</p>
+                    <h4 class="mb-3 fw-normal">Urna pretium elit mauris cursus at elit Vestibulum.</h4>
+                    <a href="#" class="d-flex align-items-center gap-4">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="image overflow-hidden rounded-bottom position-relative">
+                  <div class="sale-data position-absolute d-flex gap-1 flex-column align-items-center rounded">
+                    <span class="fw-bolder">10</span>
+                    <span class="fs-13">oct</span>
+                  </div>
+                  <img class="w-100 h-100" src="images/blog-1.jpg" alt="blog-1">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="holder">
+                <div class="box rounded-top">
+                  <div class="info p-4">
+                    <p class="p-color">By Admin | Snacks</p>
+                    <h4 class="mb-3 fw-normal">Urna pretium elit mauris cursus at elit Vestibulum.</h4>
+                    <a href="#" class="d-flex align-items-center gap-4">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="image overflow-hidden rounded-bottom position-relative">
+                  <div class="sale-data position-absolute d-flex gap-1 flex-column align-items-center rounded">
+                    <span class="fw-bolder">31</span>
+                    <span class="fs-13">Jan</span>
+                  </div>
+                  <img class="w-100 h-100" src="images/blog-2.jpg" alt="blog-2">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="holder">
+                <div class="box rounded-top">
+                  <div class="info p-4">
+                    <p class="p-color">By Admin | Vegetables</p>
+                    <h4 class="mb-3 fw-normal">Urna pretium elit mauris cursus at elit Vestibulum.</h4>
+                    <a href="#" class="d-flex align-items-center gap-4">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="image overflow-hidden rounded-bottom position-relative">
+                  <div class="sale-data position-absolute d-flex gap-1 flex-column align-items-center rounded">
+                    <span class="fw-bolder">20</span>
+                    <span class="fs-13">Feb</span>
+                  </div>
+                  <img class="w-100 h-100" src="images/blog-3.jpg" alt="blog-3">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="holder">
+                <div class="box rounded-top">
+                  <div class="info p-4">
+                    <p class="p-color">By Admin | Vegetables</p>
+                    <h4 class="mb-3 fw-normal">Urna pretium elit mauris cursus at elit Vestibulum.</h4>
+                    <a href="#" class="d-flex align-items-center gap-4">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="image overflow-hidden rounded-bottom position-relative">
+                  <div class="sale-data position-absolute d-flex gap-1 flex-column align-items-center rounded">
+                    <span class="fw-bolder">13</span>
+                    <span class="fs-13">Dec</span>
+                  </div>
+                  <img class="w-100 h-100" src="images/blog-2.jpg" alt="blog-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End News Sec -->
+    <!-- Start Contact Sec -->
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4 mb-lg-0">
+            <div class="box">
+              <a href="#" class="d-block main-logo mb-3">
+                <img src="images/logo.png" alt="logo">
+              </a>
+              <p class="p-color">
+                Carrot is the biggest market of grocery products. Get your daily needs from our store.
+              </p>
+              <ul class="d-flex flex-column gap-3">
+                <li class="d-flex align-items-center gap-3">
+                  <i class="fa-thin fa-location-dot"></i>
+                  <a class="p-color" href="https://www.google.com/maps/place/Mit+Antar,+Talkha,+Dakahlia+Governorate+7625642/@31.0741695,31.3935929,15z/data=!3m1!4b1!4m6!3m5!1s0x14f777d2468ebc7f:0xdc1b383d31c93492!8m2!3d31.0741704!4d31.4038926!16s%2Fg%2F1hc1y25mp?entry=ttu" target="_blank">
+                    51 Green St.Huntington ohaio beach ontario, NY 11746 KY 4783, USA.
+                  </a>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <i class="fa-brands fa-google"></i>
+                  <a class="p-color" href="mailto:abdomohamed782002@gmail.com" target="_blank">abdomohamed782002@gmail.com</a>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <i class="fa-thin fa-phone"></i>
+                  <a class="p-color" href="https://wa.me/+201001520321" target="_blank">+2 1001 520 321</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 col-xl-2 mb-4 mb-lg-0">
+            <div class="box">
+              <h5>Company</h5>
+              <ul>
+                <li><a class="d-block pt-2 pb-2" href="Error 404.html">Gaming</a></li>
+                <li><a class="d-block pt-2 pb-2" href="Error 404.html">Product</a></li>
+                <li><a class="d-block pt-2 pb-2" href="Error 404.html">All NFTs</a></li>
+                <li><a class="d-block pt-2 pb-2" href="Error 404.html">Social Network</a></li>
+                <li><a class="d-block pt-2 pb-2" href="Error 404.html">Domain Names</a></li>
+                <li><a class="d-block pt-2 pb-2" href="Error 404.html">Collectibles</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 col-xl-2 mb-4 mb-lg-0">
+            <div class="box">
+              <h5>Category</h5>
+              <ul>
+                <li><a class="d-block pt-2 pb-2" href="Error 404.html">Dairy & Bakery</a></li>
+                <li><a class="d-block pt-2 pb-2" href="Error 404.html">Fruits & Vegetable</a></li>
+                <li><a class="d-block pt-2 pb-2" href="Error 404.html">Snack & Spice</a></li>
+                <li><a class="d-block pt-2 pb-2" href="Error 404.html">Juice & Drinks</a></li>
+                <li><a class="d-block pt-2 pb-2" href="Error 404.html">Chicken & Meat</a></li>
+                <li><a class="d-block pt-2 pb-2" href="Error 404.html">Fast Food</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+            <div class="box form-box">
+              <h5>Subscribe Our Newsletter</h5>
+              <form method="post" class="d-flex rounded overflow-hidden">
+                <input type="text" placeholder="Search for items...">
+                <i class="fa-regular fa-paper-plane d-flex justify-content-center align-items-center"></i>
+              </form>
+              <ul class="d-flex gap-2 align-items-center mt-3 mb-3">
+                <li><a href="#"><img class="w-100 h-100" src="images/FaceBook.png" alt="FaceBook"></a></li>
+                <li><a href="#"><img class="w-100 h-100" src="images/insta.webp" alt="Instagram"></a></li>
+                <li><a href="#"><img class="w-100 h-100" src="images/Whatsapp.png" alt="Whatsapp"></a></li>
+                <li><a href="https://google.com"><img class="w-100 h-100" src="images/Google.png" alt="Google"></a></li>
+                <li><a href="https://github.com/Abdelrahmanmohamed78"><img class="w-100 h-100" src="images/github.png" alt="Github"></a></li>
+              </ul>
+              <ul class="d-flex gap-2 align-items-center">
+                <li class="position-relative d-block rounded overflow-hidden">
+                  <img class="w-100 h-100" src="images/insta-1.jpg" alt="insta-1">
+                </li>
+                <li class="position-relative d-block rounded overflow-hidden">
+                  <img class="w-100 h-100" src="images/insta-2.jpg" alt="insta-2">
+                </li>
+                <li class="position-relative d-block rounded overflow-hidden">
+                  <img class="w-100 h-100" src="images/insta-3.jpg" alt="insta-3">
+                </li>
+                <li class="position-relative d-block rounded overflow-hidden">
+                  <img class="w-100 h-100" src="images/insta-4.jpg" alt="insta-4">
+                </li>
+                <li class="position-relative d-block rounded overflow-hidden">
+                  <img class="w-100 h-100" src="images/insta-5.jpg" alt="insta-5">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Sec -->
+    <!-- Start Footer -->
+    <footer class="footer pt-4 pb-4 ">
+      <div class="container text-center">
+        <p class="p-color mb-0">© Copyright 2024 - <span>Carrot</span> by <span><a href="https://github.com/Abdelrahmanmohamed78" target="_blank">Abdelrahman</a></span></p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Bootstrap Script Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <!-- Swiper.js Script Files -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Main Script File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
